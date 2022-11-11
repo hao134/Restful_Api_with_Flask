@@ -21,3 +21,5 @@ docker run -dp 5005:5000 -w /app -v "$(pwd):/app" flask-smorest-api
 ```
 ### explain
 docker run -p [local port]:[docker port] [-w /app means work in this app] ["$(pwd):/app" means from pwd copy to /app in docker] [name of docker]
+
+ref: https://blog.teclado.com/python-dictionary-merge-update-operators/
