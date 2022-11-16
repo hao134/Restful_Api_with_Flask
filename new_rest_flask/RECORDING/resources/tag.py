@@ -65,9 +65,7 @@ class LinkTagsToItem(MethodView):
         return {"message":"Item removed from tag", "item":item, "tag":tag}
 
 
-
-
-
+# if tag is not associated with any item, we can delete it
 @blp.route("/tag/<string:tag_id>")
 class Tag(MethodView):
     @blp.response(200, TagSchema)
